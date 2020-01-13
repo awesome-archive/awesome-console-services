@@ -51,6 +51,13 @@ Structured data of the list (kept in sync) is in [structured.yaml](structured.ya
 * `curl icanhazip.com`
 * `curl checkip.amazonaws.com`
 
+### DNS
+* `dig @1.1.1.1 whoami.cloudflare ch txt +short` (IPv4)
+* `dig @2606:4700:4700::1111 whoami.cloudflare ch txt -6 +short` (IPv6)
+* `dig @ns1.google.com o-o.myaddr.l.google.com TXT -6 +short` (IPv6)
+* `dig @ns1.google.com o-o.myaddr.l.google.com TXT -4 +short` (IPv4)
+* `dig resolver.dnscrypt.info TXT +short`
+
 ### JSON only
 * `curl httpbin.org/ip`
 * `curl wtfismyip.com/json`
@@ -74,6 +81,7 @@ Structured data of the list (kept in sync) is in [structured.yaml](structured.ya
 ## File Transfer
 
 * `curl --upload-file <file> transfer.sh/<filename>`
+* `curl --upload-file <file> filepush.co/upload/<filename>`
 
 ## Browser
 
@@ -135,6 +143,7 @@ Structured data of the list (kept in sync) is in [structured.yaml](structured.ya
 * `curl parrot.live` — display an animated party parrot ([hugomd/parrot.live](https://github.com/hugomd/parrot.live))
 * `curl byemck.atulr.com` — display animated goodbye message for colleagues ([master-atul/byemck](https://github.com/master-atul/byemck))
 * `ssh sshtron.zachlatta.com` ~> snake game; play with AWSD keys
+* `curl node-web-console.glitch.me` — watch an emoji race ([source](https://glitch.com/edit/#!/node-web-console))
 
 ## Scripts
 
